@@ -3,10 +3,10 @@ var bodyParser = require('body-parser');
 var request = require('request');
 var querystring = require('querystring');
 
-var apiKey = 'API_KEY';
-var apiSecret = 'API_SECRET';
+var apiKey = 'YzI4ZTZjODUtY2MxMS00YjI1LWE4MDQtMmRiYTNhOTRmOTM4';
+var apiSecret = 'MjQ5ZTI0MWMtMzgxYS00ODU3LWE4NDItOTRkMmM2OWU2YTA5';
 
-var port = 2000;
+var port = process.env.PORT || 2000;
 var baseUrl = 'http://localhost:' + port;
 var redirectUri = baseUrl + '/authorize';
 
@@ -82,3 +82,4 @@ app.get('/reauthorize', function(clientRequest, clientResponse) {
 app.listen(port, function() {
   console.log('Listening on', port);
 });
+

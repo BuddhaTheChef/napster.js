@@ -4,6 +4,16 @@
   "dependencies": {
     "body-parser": "^1.12.2",
     "express": "^4.12.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "^2.1.1",
     "request": "^2.54.0"
-  }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:2000/"
 }
